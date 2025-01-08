@@ -9,7 +9,7 @@ RUN npm run build
 
 FROM wurstbrot/dsomm-yaml-generation as yaml
 
-FROM caddy
+FROM caddy:2.9
 ENV PORT 8080
 
 COPY Caddyfile /etc/caddy/Caddyfile
